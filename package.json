@@ -1,0 +1,36 @@
+{
+  "name": "mitchoneill",
+  "version": "1.0.0",
+  "description": "Personal website, portfolio and resume",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "stylus source/stylesheets/index.styl -o static/css",
+    "watch-css": "stylus source/stylesheets/index.styl -o static/css -w",
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitchellONeill/mitchoneill.git"
+  },
+  "keywords": [
+    "resume",
+    "personal",
+    "mitchoneill"
+  ],
+  "author": "Mitchell O'Neill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MitchellONeill/mitchoneill/issues"
+  },
+  "homepage": "https://github.com/MitchellONeill/mitchoneill#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.2",
+    "stylus": "^0.54.5"
+  }
+}
