@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/MitchellONeill/mitchoneill#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "express": "^4.14.0",
     "jade": "^1.11.0",
     "morgan": "^1.7.0",
