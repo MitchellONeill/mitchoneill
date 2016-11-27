@@ -43,9 +43,6 @@ body {
   line-height: 1.6;
   margin-bottom: 1.7em;
 }
-.main-content div {
-  display: block;
-}
 .footer {
   margin: 50px auto;
   max-width: 600px;
@@ -55,25 +52,4 @@ body {
 .footer p {
   color: #444;
   font-size: 12px;
-}
-#intro {
-  max-width: 33%;
-  margin-left: 33%;
-}
-#projectspec {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-#projectspec table {
-  width: 100%;
-}
-#projectspec table td {
-  width: 20%;
-}
-#projectspec table i {
-  font-size: 120px;
-}
-#projectspec table img {
-  width: 120px;
-  height: 120px;
 }
