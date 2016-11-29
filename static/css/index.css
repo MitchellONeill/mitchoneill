@@ -8,7 +8,7 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 .header {
-  background: url("https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background: url("https://s3-us-west-2.amazonaws.com/mitchoneill-ca/laosbgrd.JPG");
   background-position: center;
 }
 .header .page-title {
@@ -17,6 +17,12 @@ body {
   text-align: center;
   padding: 100px;
   text-transform: uppercase;
+  color: #fff;
+}
+.header .page-title a {
+  color: #fff;
+}
+.header .page-title a:visited {
   color: #fff;
 }
 .nav {
@@ -35,6 +41,9 @@ body {
 .nav a:hover {
   background-color: #3ab795;
   text-decoration: underline;
+}
+.nav a:visited {
+  color: #fff;
 }
 .main-content {
   margin: 50px auto;
@@ -57,23 +66,26 @@ body {
   font-size: 12px;
 }
 #intro {
-  max-width: 33%;
-  margin-left: 33%;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-bottom: 2em;
 }
-#projectspec {
+table.container {
+  width: 100%;
   padding-left: 10%;
   padding-right: 10%;
 }
-#projectspec table {
-  width: 100%;
+table.container td {
+  width: 25%;
 }
-#projectspec table td {
-  width: 20%;
+table.container i {
+  font-size: 100px;
 }
-#projectspec table i {
-  font-size: 120px;
+table.container img {
+  width: 100px;
+  height: 100px;
 }
-#projectspec table img {
-  width: 120px;
-  height: 120px;
+div.contact {
+  padding-left: 15%;
+  padding-top: 3em;
 }
