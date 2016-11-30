@@ -9,17 +9,21 @@ body
   font-family 'Source Code Pro', monospace
 
 .header
-  background url('https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925')
+  background url('https://s3-us-west-2.amazonaws.com/mitchoneill-ca/laosbgrd.JPG')
   background-position center
-
+  height 150px
   .page-title
     font-weight 200
     font-size 80px
     text-align center
-    padding 100px
+    padding 10px
     text-transform uppercase
     color #fff
 
+    a
+      color #fff
+      &:visited
+        color #fff
 .nav
   background #000
   text-align center
@@ -29,16 +33,17 @@ body
 
   a
     display inline-block
-    padding 20px
+    padding 20px 40px
     color #fff
     text-decoration none
-
     &:hover
       background-color #3AB795
       text-decoration underline
+    &:visited
+      color #fff
 
 .main-content
-  margin 50px auto
+  margin 4.5em auto
 
   p
     line-height 1.6
@@ -59,20 +64,48 @@ body
     font-size 12px
 
 #intro
-  max-width 33%
-  margin-left 33%
+  max-width 50%
+  margin-left 25%
+  margin-bottom 4.5em
 
-#projectspec
+div.container
+  width 100%
   padding-left 10%
   padding-right 10%
+
   table
     width 100%
+    cursor pointer
+
     td
-      width 20%
+      text-align center
+      width 25%
+
     i
-      font-size 120px
+      font-size 100px
+
     img
-      width 120px
-      height 120px
+      width 100px
+      height 100px
+
+    tr.hidden
+      td
+        visibility hidden
+        background #F8F8F8
+        position relative
+        border 5px solid #DFDFDF
+        text-align left
+        font-size 13px
+        line-height 20px
+        top 1em
+        width 25%
+        padding 0 20px
+
+div.contact
+  padding-left 15%
+  padding-top 3em
+
+
+
 
 
