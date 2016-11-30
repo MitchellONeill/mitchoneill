@@ -10,12 +10,13 @@ body {
 .header {
   background: url("https://s3-us-west-2.amazonaws.com/mitchoneill-ca/laosbgrd.JPG");
   background-position: center;
+  height: 150px;
 }
 .header .page-title {
   font-weight: 200;
   font-size: 80px;
   text-align: center;
-  padding: 100px;
+  padding: 10px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -34,7 +35,7 @@ body {
 }
 .nav a {
   display: inline-block;
-  padding: 20px;
+  padding: 20px 40px;
   color: #fff;
   text-decoration: none;
 }
@@ -46,7 +47,7 @@ body {
   color: #fff;
 }
 .main-content {
-  margin: 50px auto;
+  margin: 4.5em auto;
 }
 .main-content p {
   line-height: 1.6;
@@ -68,22 +69,39 @@ body {
 #intro {
   max-width: 50%;
   margin-left: 25%;
-  margin-bottom: 2em;
+  margin-bottom: 4.5em;
 }
-table.container {
+div.container {
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
 }
-table.container td {
+div.container table {
+  width: 100%;
+  cursor: pointer;
+}
+div.container table td {
+  text-align: center;
   width: 25%;
 }
-table.container i {
+div.container table i {
   font-size: 100px;
 }
-table.container img {
+div.container table img {
   width: 100px;
   height: 100px;
+}
+div.container table tr.hidden td {
+  visibility: hidden;
+  background: #f8f8f8;
+  position: relative;
+  border: 5px solid #dfdfdf;
+  text-align: left;
+  font-size: 13px;
+  line-height: 20px;
+  top: 1em;
+  width: 25%;
+  padding: 0 20px;
 }
 div.contact {
   padding-left: 15%;

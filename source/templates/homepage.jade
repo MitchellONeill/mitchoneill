@@ -4,38 +4,93 @@ block content
   #intro
     h2 Welcome!
     span Please visit the tabs above to see a sample of the projects I have been working on since taking on the Lighthouse Labs web development bootcamp in September 2016. I am excited to learn new languages, take on difficult tasks and produce elegant and efficient code. Please visit the #[a(href="/contact") contact page] if you're interested in requesting further information.
-  table.container
-    theader
-      td
-        h2 Languages:
-      td
-        h2 Front-end:
-      td
-        h2 Libraries:
-      td
-        h2 Databases:
-    tr
-      td
-        i.devicon-javascript-plain
-        i.devicon-ruby-plain-wordmark
-      td
-        i.devicon-css3-plain-wordmark
-        i.devicon-bootstrap-plain-wordmark
-      td
-        i.devicon-rails-plain-wordmark
-        i.devicon-nodejs-plain-wordmark
-      td
-        i.devicon-mongodb-plain-wordmark
-        i.devicon-postgresql-plain-wordmark
-    tr
-      td
-        img(src = "https://developer.r-project.org/Logo/Rlogo-3.png")
-      td
-        img(src = "http://i.imgur.com/5zf2aVt.png")
-        i.devicon-foundation-plain-wordmark
-      td
-        i.devicon-react-original-wordmark
-        i.devicon-jquery-plain-wordmark
+  div.container
+    table
+      theader
+        td
+          h2 Languages:
+        td
+          h2 Libraries:
+        td
+          h2 Front-End:
+        td
+          h2 Back-End:
+      tr
+        td.languages
+          i.devicon-javascript-plain
+          i.devicon-ruby-plain-wordmark
+        td.libraries
+          i.devicon-rails-plain-wordmark
+          i.devicon-nodejs-plain-wordmark
+        td.front-end
+          i.devicon-css3-plain-wordmark
+          i.devicon-bootstrap-plain-wordmark
+        td.back-end
+          i.devicon-mongodb-plain-wordmark
+          i.devicon-postgresql-plain-wordmark
+      tr
+        td.languages
+          img(src = "https://developer.r-project.org/Logo/Rlogo-3.png")
+        td.libraries
+          i.devicon-react-original-wordmark
+          i.devicon-jquery-plain-wordmark
+        td.front-end
+          img(src = "http://i.imgur.com/5zf2aVt.png")
+          i.devicon-foundation-plain-wordmark
+        td.back-end
+      tr.hidden
+        td.languages-hide
+          ul #[u Javascript Credentials:]
+            li Focus of weeks 1-5 + prep course for Lighthouse Labs
+            li Experience with NodeJS express servers
+            li ChattyApp, JustDoIt, mitchoneill.ca
+          ul #[u Ruby Credentials:]
+            li Focus of weeks 6-8 for Lighthouse Labs
+            li JockBuff, JungleStore
+          ul #[u R programming Credentials:]
+            li Coursera- Data Science Specialization (9 courses)
+        td.libraries-hide
+          ul #[u Libraries:]
+            li #[p I have built two Ruby projects using Rails (JockBuff, JungleStore) and have studied angular for use in future nodeJS apps. For JockBuff I used graphing libraries like HighCharts + Waypoint and I was tasked with controlling the entire API data flow from Yahoo using omniauth (as well as correcting a gem to connect specifically with Yahoo) and HTTParty]
+        td.front-end-hide
+          ul #[u Front-end:]
+            li #[p I have expeharience with multiple front end frameworks including Bootstrap and Foundation. The #[a(href='https://jockbuff-fantasy.herokuapp.com/') Jockbuff website], my final group project at Lighthouse, was done with Bootsrap and I was responsible for many of the customizable graphs and DOM manipulation using Jquery. I am keen to work with new or different technology, this site was built using a jade/pug template engine.]
+        td.back-end-hide
+          ul #[u Back-End:]
+            li #[p I have worked with document-oriented databases (mongo) and relational databases (postgres). Deployed Node (including this site), Ruby and Websockets servers and used Ajax and React for dynamic loading. With JockBuff, I also created the normalized ranking algorithim along with related methods to manipulate the prediction data to fit the specialized charts, graphs and features]
+
+
+  script.
+    $("td.languages").hover(function(){
+      $("td.languages-hide").css('visibility', 'visible');
+    },
+    function(){
+      $("td.languages-hide").css('visibility', 'hidden');
+    });
+
+    $("td.libraries").hover(function(){
+      $("td.libraries-hide").css('visibility', 'visible');
+    },
+    function(){
+      $("td.libraries-hide").css('visibility', 'hidden');
+    });
+
+    $("td.front-end").hover(function(){
+      $("td.front-end-hide").css('visibility', 'visible');
+    },
+    function(){
+      $("td.front-end-hide").css('visibility', 'hidden');
+    });
+
+    $("td.back-end").hover(function(){
+      $("td.back-end-hide").css('visibility', 'visible');
+    },
+    function(){
+      $("td.back-end-hide").css('visibility', 'hidden');
+    });
+
+
+
 
 
 
