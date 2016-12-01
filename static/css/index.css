@@ -53,9 +53,6 @@ body {
   line-height: 1.6;
   margin-bottom: 1.7em;
 }
-.main-content div {
-  display: block;
-}
 .footer {
   margin: 50px auto;
   max-width: 600px;
@@ -84,15 +81,9 @@ div.container table td {
   text-align: center;
   width: 25%;
 }
-div.container table i {
-  font-size: 100px;
-}
-div.container table img {
-  width: 100px;
-  height: 100px;
-}
-div.container table tr.hidden td {
-  visibility: hidden;
+div.container table td div.description {
+  display: none;
+  text-align: left;
   background: #f8f8f8;
   position: relative;
   border: 5px solid #dfdfdf;
@@ -100,8 +91,15 @@ div.container table tr.hidden td {
   font-size: 13px;
   line-height: 20px;
   top: 1em;
-  width: 25%;
+  width: 100%;
   padding: 0 20px;
+}
+div.container table i {
+  font-size: 100px;
+}
+div.container table img {
+  width: 100px;
+  height: 100px;
 }
 div.contact {
   padding-left: 15%;

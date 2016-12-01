@@ -3,7 +3,6 @@ var logger = require('morgan')
 var app = express()
 var homepage = require('jade').compileFile(__dirname + '/source/templates/homepage.jade')
 var contact = require('jade').compileFile(__dirname + '/source/templates/contact.jade')
-
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/static'))
 

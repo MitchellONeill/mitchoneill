@@ -17,76 +17,84 @@ block content
           h2 Back-End:
       tr
         td.languages
-          i.devicon-javascript-plain
-          i.devicon-ruby-plain-wordmark
+          div.icons
+            i.devicon-javascript-plain
+            i.devicon-ruby-plain-wordmark
+            br
+            img(src = "https://developer.r-project.org/Logo/Rlogo-3.png")
+          div.description
+            ul #[u Javascript Credentials:]
+              li Focus of weeks 1-5 + prep course for Lighthouse Labs
+              li Experience with NodeJS express servers
+              li ChattyApp, JustDoIt, mitchoneill.ca
+            ul #[u Ruby Credentials:]
+              li Focus of weeks 6-8 for Lighthouse Labs
+              li JockBuff, JungleStore
+            ul #[u R programming Credentials:]
+              li Coursera- Data Science Specialization (9 courses)
         td.libraries
-          i.devicon-rails-plain-wordmark
-          i.devicon-nodejs-plain-wordmark
+          div.icons
+            i.devicon-rails-plain-wordmark
+            i.devicon-nodejs-plain-wordmark
+            br
+            i.devicon-react-original-wordmark
+            i.devicon-jquery-plain-wordmark
+          div.description
+            ul #[u Libraries:]
+              li #[p I have built two Ruby projects using Rails (JockBuff, JungleStore) and have studied angular for use in future nodeJS apps. For JockBuff I used graphing libraries like HighCharts + Waypoint and I was tasked with controlling the entire API data flow from Yahoo using omniauth (as well as correcting a gem to connect specifically with Yahoo) and HTTParty]
         td.front-end
-          i.devicon-css3-plain-wordmark
-          i.devicon-bootstrap-plain-wordmark
+          div.icons
+            i.devicon-css3-plain-wordmark
+            i.devicon-bootstrap-plain-wordmark
+            br
+            img(src = "http://i.imgur.com/5zf2aVt.png")
+            i.devicon-foundation-plain-wordmark
+          div.description
+            ul #[u Front-end:]
+              li #[p I have expeharience with multiple front end frameworks including Bootstrap and Foundation. The #[a(href='https://jockbuff-fantasy.herokuapp.com/') Jockbuff website], my final group project at Lighthouse, was done with Bootsrap and I was responsible for many of the customizable graphs and DOM manipulation using Jquery. I am keen to work with new or different technology, this site was built using a jade/pug template engine.]
         td.back-end
-          i.devicon-mongodb-plain-wordmark
-          i.devicon-postgresql-plain-wordmark
-      tr
-        td.languages
-          img(src = "https://developer.r-project.org/Logo/Rlogo-3.png")
-        td.libraries
-          i.devicon-react-original-wordmark
-          i.devicon-jquery-plain-wordmark
-        td.front-end
-          img(src = "http://i.imgur.com/5zf2aVt.png")
-          i.devicon-foundation-plain-wordmark
-        td.back-end
-      tr.hidden
-        td.languages-hide
-          ul #[u Javascript Credentials:]
-            li Focus of weeks 1-5 + prep course for Lighthouse Labs
-            li Experience with NodeJS express servers
-            li ChattyApp, JustDoIt, mitchoneill.ca
-          ul #[u Ruby Credentials:]
-            li Focus of weeks 6-8 for Lighthouse Labs
-            li JockBuff, JungleStore
-          ul #[u R programming Credentials:]
-            li Coursera- Data Science Specialization (9 courses)
-        td.libraries-hide
-          ul #[u Libraries:]
-            li #[p I have built two Ruby projects using Rails (JockBuff, JungleStore) and have studied angular for use in future nodeJS apps. For JockBuff I used graphing libraries like HighCharts + Waypoint and I was tasked with controlling the entire API data flow from Yahoo using omniauth (as well as correcting a gem to connect specifically with Yahoo) and HTTParty]
-        td.front-end-hide
-          ul #[u Front-end:]
-            li #[p I have expeharience with multiple front end frameworks including Bootstrap and Foundation. The #[a(href='https://jockbuff-fantasy.herokuapp.com/') Jockbuff website], my final group project at Lighthouse, was done with Bootsrap and I was responsible for many of the customizable graphs and DOM manipulation using Jquery. I am keen to work with new or different technology, this site was built using a jade/pug template engine.]
-        td.back-end-hide
-          ul #[u Back-End:]
-            li #[p I have worked with document-oriented databases (mongo) and relational databases (postgres). Deployed Node (including this site), Ruby and Websockets servers and used Ajax and React for dynamic loading. With JockBuff, I also created the normalized ranking algorithim along with related methods to manipulate the prediction data to fit the specialized charts, graphs and features]
-
+          div.icons
+            i.devicon-mongodb-plain-wordmark
+            i.devicon-postgresql-plain-wordmark
+          div.description
+            ul #[u Back-End:]
+              li #[p I have worked with document-oriented databases (mongo) and relational databases (postgres). Deployed Node (including this site), Ruby and Websockets servers and used Ajax and React for dynamic loading. With JockBuff, I also created the normalized ranking algorithim along with related methods to manipulate the prediction data to fit the specialized charts, graphs and features]
 
   script.
     $("td.languages").hover(function(){
-      $("td.languages-hide").css('visibility', 'visible');
+      $("td.languages div.description").css('display', 'block');
+      $("td.languages div.icons").css('display', 'none');
     },
     function(){
-      $("td.languages-hide").css('visibility', 'hidden');
+      $("td.languages div.description").css('display', 'none');
+      $("td.languages div.icons").css('display', 'block');
     });
 
     $("td.libraries").hover(function(){
-      $("td.libraries-hide").css('visibility', 'visible');
+      $("td.libraries div.description").css('display', 'block');
+      $("td.libraries div.icons").css('display', 'none');
     },
     function(){
-      $("td.libraries-hide").css('visibility', 'hidden');
+      $("td.libraries div.description").css('display', 'none');
+      $("td.libraries div.icons").css('display', 'block');
     });
 
     $("td.front-end").hover(function(){
-      $("td.front-end-hide").css('visibility', 'visible');
+      $("td.front-end div.description").css('display', 'block');
+      $("td.front-end div.icons").css('display', 'none');
     },
     function(){
-      $("td.front-end-hide").css('visibility', 'hidden');
+      $("td.front-end div.description").css('display', 'none');
+      $("td.front-end div.icons").css('display', 'block');
     });
 
     $("td.back-end").hover(function(){
-      $("td.back-end-hide").css('visibility', 'visible');
+      $("td.back-end div.description").css('display', 'block');
+      $("td.back-end div.icons").css('display', 'none');
     },
     function(){
-      $("td.back-end-hide").css('visibility', 'hidden');
+      $("td.back-end div.description").css('display', 'none');
+      $("td.back-end div.icons").css('display', 'block');
     });
 
 

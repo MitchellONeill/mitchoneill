@@ -49,9 +49,6 @@ body
     line-height 1.6
     margin-bottom 1.7em
 
-  div
-     display block
-
 
 .footer
   margin 50px auto
@@ -80,17 +77,9 @@ div.container
     td
       text-align center
       width 25%
-
-    i
-      font-size 100px
-
-    img
-      width 100px
-      height 100px
-
-    tr.hidden
-      td
-        visibility hidden
+      div.description
+        display none
+        text-align left
         background #F8F8F8
         position relative
         border 5px solid #DFDFDF
@@ -98,8 +87,15 @@ div.container
         font-size 13px
         line-height 20px
         top 1em
-        width 25%
+        width 100%
         padding 0 20px
+
+    i
+      font-size 100px
+
+    img
+      width 100px
+      height 100px
 
 div.contact
   padding-left 15%
